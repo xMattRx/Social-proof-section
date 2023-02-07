@@ -1,0 +1,47 @@
+.container {
+    background: hsl(300, 43%, 22%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 45px 25px;
+
+    .header {
+        align-items: center;
+        display: flex;
+        gap: 25px;
+
+        img {
+            border-radius: 50%;
+        }
+
+        .texts {
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                color: #FFF;
+                font-size: 16px;
+            }
+
+            h3 {
+                color: hsl(333, 80%, 67%);
+                font-size: 16px;
+            }
+        }
+    }
+
+    .description {
+        color: #fff;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 30px;
+        max-width: 310px;
+        text-align: left;
+
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+}
